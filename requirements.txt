@@ -1,0 +1,4 @@
+dnspython
+matplotlib
+numpy
+tqdm
