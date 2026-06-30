@@ -2,7 +2,11 @@
 
 This repository contains the measurement scripts, datasets, and plotting utilities used for the Internet-scale analysis of NSEC3 deployments presented in the accompanying paper.
 
-The measurements were performed from **February 3 to February 5, 2026 (CET)** on the Tranco Top-1M domain list using the public recursive resolver **1.1.1.1 (Cloudflare)**. For each domain, the scripts collect published NSEC3 parameters, derive the corresponding work limits used by current DNSSEC-validating resolvers, and reproduce the figures reported in the paper.
+The measurements were performed from **February 3 to February 5, 2026 (CET)** using the **Tranco Top-1M list (ID: KW9YW)**, available at
+
+https://tranco-list.eu/list/KW9YW/1000000
+
+Queries were sent to the public recursive resolver **1.1.1.1 (Cloudflare)**. For each domain, the scripts collect published NSEC3 parameters, derive the corresponding work limits used by current DNSSEC-validating resolvers, and reproduce the figures reported in the paper.
 
 The repository includes the processed measurement datasets used to obtain the reported results.
 
@@ -152,7 +156,7 @@ Contains one row per queried domain including
 
 The repository includes `input/test_domains.txt` for functional testing.
 
-The Internet-scale measurements reported in the paper were performed on the **Tranco Top-1M** domain list. Since the Tranco list is publicly available and regularly updated, it is intentionally **not** redistributed as part of this artifact.
+The Internet-scale measurements reported in the paper were performed on the **Tranco Top-1M list (ID: KW9YW)** domain list: https://tranco-list.eu/list/KW9YW/1000000. Since the Tranco list is publicly available and regularly updated, it is intentionally **not** redistributed as part of this artifact.
 
 To reproduce the full measurements, download the corresponding Tranco Top-1M list and place it as
 
